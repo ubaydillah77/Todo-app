@@ -1,0 +1,21 @@
+.todo {
+  margin: 3rem 40rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: rgb(149, 54, 83);
+
+  &__header {
+    font-size: 3rem;
+    color: #fff;
+    margin-top: 4rem;
+  }
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+.footer {
+  margin-top: 3rem;
+}
