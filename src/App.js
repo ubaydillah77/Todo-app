@@ -7,7 +7,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      message: `Todo List`,
+      message: `To-Do List`,
       newTodo: '',
       todos: [
         {
@@ -79,23 +79,27 @@ class App extends Component {
   render() {
     const year = new Date().getFullYear();
     return (
-      <div className='todo'>
-        <h2 className='todo__header'>{this.state.message}</h2>
-        <NewTodoForm
-          newTodo={this.state.newTodo}
-          onTodoChanged={this.onTodoChanged.bind(this)}
-          formSubmitted={this.formSubmitted.bind(this)}
-        />
-        <TodoList
-          todos={this.state.todos}
-          toggleTodoDone={this.toggleTodoDone.bind(this)}
-          removeTodo={this.removeTodo.bind(this)}
-        />
-        <button onClick={() => this.allDone()}>All done</button>
-        {/* footer */}
-        <footer className='footer'>
-          build with &hearts; by ubay &copy;{year}
-        </footer>
+      <div className='container'>
+        <div className='todo'>
+          <h2 className='todo__header'>{this.state.message}</h2>
+          <NewTodoForm
+            newTodo={this.state.newTodo}
+            onTodoChanged={this.onTodoChanged.bind(this)}
+            formSubmitted={this.formSubmitted.bind(this)}
+          />
+          <TodoList
+            todos={this.state.todos}
+            toggleTodoDone={this.toggleTodoDone.bind(this)}
+            removeTodo={this.removeTodo.bind(this)}
+          />
+          <button className='btn' onClick={() => this.allDone()}>
+            All done
+          </button>
+          {/* footer */}
+          <footer className='footer'>
+            build with &hearts; by ubay &copy;{year}
+          </footer>
+        </div>
       </div>
     );
   }

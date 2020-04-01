@@ -8,6 +8,7 @@ const TodoList = ({ toggleTodoDone, todos, removeTodo }) => {
         {todos.map((todo, index) => {
           return (
             <TodoItem
+              index={index}
               key={index}
               todo={todo}
               toggleTodoDone={toggleTodoDone}

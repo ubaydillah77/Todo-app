@@ -9,15 +9,17 @@ const TodoItem = ({ todo, index, toggleTodoDone, removeTodo }) => {
         onChange={(event) => toggleTodoDone(event, index)}
         checked={todo.done}
       />
-      <span
+      {/* <span
         style={{
           textDecoration: todo.done ? 'line-through' : 'inherit'
         }}
       >
         {todo.title}
-      </span>
-      {/* <span className={todo.done ? 'done' : ''}>{todo.title}</span> */}
-      <button onClick={() => removeTodo(index)}>remove</button>
+      </span> */}
+      <span className={todo.done ? 'done' : ''}>{todo.title}</span>
+      <button className='btn' onClick={() => removeTodo(index)}>
+        remove
+      </button>
     </li>
   );
 };

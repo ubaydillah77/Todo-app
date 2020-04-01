@@ -3,16 +3,21 @@ import './NewTodoForm.scss';
 
 const NewTodoForm = ({ formSubmitted, onTodoChanged, newTodo }) => {
   return (
-    <div>
-      <form className='todoForm' onSubmit={formSubmitted}>
-        <label htmlFor='NewTodo'>New Todo </label>
+    <div className='todoForm'>
+      <form onSubmit={formSubmitted}>
+        <label className='todoForm__label' htmlFor='NewTodo'>
+          Todo
+        </label>
         <input
+          className='todoForm__input'
           onChange={onTodoChanged}
           id='NewTodo'
           name='NewTodo'
           value={newTodo}
         />
-        <button type='submit'>Add Todo</button>
+        <button className='btn' type='submit'>
+          Add Todo
+        </button>
       </form>
     </div>
   );
