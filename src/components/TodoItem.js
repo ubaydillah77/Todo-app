@@ -5,6 +5,7 @@ const TodoItem = ({ todo, index, toggleTodoDone, removeTodo }) => {
   return (
     <li className='item'>
       <input
+        className='checkbox'
         type='checkbox'
         onChange={(event) => toggleTodoDone(event, index)}
         checked={todo.done}
@@ -18,7 +19,7 @@ const TodoItem = ({ todo, index, toggleTodoDone, removeTodo }) => {
       </span> */}
       <span className={todo.done ? 'done' : ''}>{todo.title}</span>
       <button className='btn' onClick={() => removeTodo(index)}>
-        remove
+        Remove
       </button>
     </li>
   );

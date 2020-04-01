@@ -6,7 +6,7 @@ const NewTodoForm = ({ formSubmitted, onTodoChanged, newTodo }) => {
     <div className='todoForm'>
       <form onSubmit={formSubmitted}>
         <label className='todoForm__label' htmlFor='NewTodo'>
-          Todo
+          TODO
         </label>
         <input
           className='todoForm__input'

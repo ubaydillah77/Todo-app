@@ -8,16 +8,26 @@
   flex-direction: column;
 
   &__header {
-    font-size: 5rem;
-    color: #fff;
-    margin-top: 4rem;
-    margin-bottom: 2rem;
+    color: seashell;
+    transform: rotate(2deg);
+    padding: 0.2rem 1.2rem;
+    border-radius: 20% 5% 20% 5%/5% 20% 25% 20%;
+    background-color: #fdcb6e;
+    font-size: 3rem;
   }
 }
 
 .btn {
   border: none;
-  background-color: sandybrown;
+  background-color: rgb(85, 102, 253);
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20% 5% 20% 5%/5% 20% 25% 20%;
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: rgb(177, 120, 69);
 }
 
 .done {
