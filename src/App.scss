@@ -18,16 +18,18 @@
 }
 
 .btn {
+  cursor: pointer;
   border: none;
   background-color: rgb(85, 102, 253);
   margin: 1rem;
-  padding: 0.5rem 1rem;
+  padding: 0.7rem 1.2rem;
   border-radius: 20% 5% 20% 5%/5% 20% 25% 20%;
   color: #fff;
 }
 
 .btn:hover {
-  background-color: rgb(177, 120, 69);
+  background-color: rgb(84, 97, 214);
+  transform: rotate(-2deg);
 }
 
 .done {

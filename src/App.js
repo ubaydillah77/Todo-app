@@ -11,11 +11,7 @@ class App extends Component {
       newTodo: '',
       todos: [
         {
-          title: 'build todos app',
-          done: false
-        },
-        {
-          title: 'make app good',
+          title: 'Your todo here!',
           done: false
         }
       ]
